@@ -1,3 +1,4 @@
+// Printing asterisk pyramid of a certain height
 #include<stdio.h>
 
 int main(){
