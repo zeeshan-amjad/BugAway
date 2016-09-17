@@ -1,3 +1,4 @@
+// Printing asterisk pyramid of a certain height
 #include<stdio.h>
 #include<conio.h>         // try not to use in online IDEs
 
