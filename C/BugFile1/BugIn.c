@@ -1,6 +1,6 @@
 #include<stdio.h>
 #include<conio.h>         // try not to use in online IDEs
- 
+
 main(){
 int i,rows,space,k;
  //printf("Enter the number of rows you wanted to print\n");
@@ -15,3 +15,4 @@ printf("\n");
 getch ();         // try not to use in online IDEs
 return 0;
 }
+// TIP : Use better indentations :) 
