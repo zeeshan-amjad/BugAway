@@ -9,14 +9,13 @@ class Cents {
 	void print(){
 		std::cout<<"I have "<<m_cents<<" cents\n";
 	}
-	friend Cents operator+(const Cents &c1,const Cents &c2);
+	friend Cents operator+ (const Cents &c1,const Cents &c2);
 	int getCents(){
 		return m_cents;
 	}
 };
-Cents operator+(const Cents &c1,const Cents &c2){
-	Cents c (c1.m_cents+c2.m_cents);
-	return c;
+Cents operator+ (const Cents &c1,const Cents &c2){
+	return Cents (c1.m_cents+c2.m_cents);
 }
 
 int main(){
