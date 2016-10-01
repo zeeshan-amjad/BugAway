@@ -29,7 +29,7 @@ class quadratic{
 			complex root(){
 				complex temp;
 				int t;
-				t=(b*b-a*c);
+				t=(b*b-a*c);	//incorrect formula for determinant
 				if(t>=0)
 				{
 					temp.re1=(-b+sqrt(t))/(2*a);
