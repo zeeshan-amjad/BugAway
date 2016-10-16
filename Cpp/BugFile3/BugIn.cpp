@@ -46,7 +46,7 @@ public:
 		while(true){
 			if(m_data[front]==MIN)
 				break;
-			if(front==rear)         //position of this condition needs to be changed (think about the case when you are calling display() the first time)
+			if(front==rear) //position of this condition needs to be changed (think about the case when you are calling display() the first time)
 				break;
 			cout<<m_data[front]<<"\t";
 			front=(front+1)%(m_size);
