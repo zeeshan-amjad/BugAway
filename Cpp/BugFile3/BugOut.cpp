@@ -47,7 +47,7 @@ public:
 			if(m_data[front]==MIN)
 				break;
 			cout<<m_data[front]<<"\t";
-			if(front== rear)
+			if(front== rear)    //Fixed :)
                                 break;
 			front=(front+1)%(m_size);
 		}
