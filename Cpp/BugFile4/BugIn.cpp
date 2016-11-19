@@ -14,15 +14,15 @@ public:
 //Overloading + operator
 	friend Point operator+(const Point &p1,const Point &p2);
 //Overloading << operator
-	friend ostream& operator<<(const ostream &out,const Point p);
-};
+	friend ostream& operator<<(const ostream &out,const Point p);	//ambiguos definition of p, must be passed as const reference
+};									//object out should not be const as it gets modified	
 //Function definition of the overloaded operator
 Point operator+(const Point &p1,const Point &p2){
 	Point p(p1.m_x+p2.m_x,p1.m_y+p2.m_y,p1.m_z+p2.m_z);
 	return p;
 }
 //Function definition of the overloaded << operator
-ostream& operator<<(const ostream& out,const Point &p){
+ostream& operator<<(const ostream& out,const Point &p){		
 	out<<"("<<p.m_x<<","<<p.m_y<<","<<p.m_z<<")";
 	return out;
 }
